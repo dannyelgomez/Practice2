@@ -7,8 +7,10 @@ function selectView(event) {
     const formName = event.currentTarget.getAttribute('data-form');
     setTimeout(() => {
         const form = document.getElementById(formName);
-        form.addEventListener("submit", handleFormSubmit);
-    }, 3000);
+        if (form) {
+            form.addEventListener("submit", handleFormSubmit);
+        }
+    }, 5000);
 }
 
 /* 1_users */
@@ -42,6 +44,7 @@ categoriesForm.addEventListener("submit", handleFormSubmit); */
 const testingForm = false;
 
 async function handleFormSubmit(event) {
+    debugger
     event.preventDefault();
 
     const form = event.currentTarget;
