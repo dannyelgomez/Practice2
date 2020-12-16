@@ -1,11 +1,14 @@
 const links = document.querySelectorAll('.link');
 links.forEach(link => {
-    const form = link.getAttribute('data-form');
-    link.addEventListener("click", test(form));
+    link.addEventListener("click", selectView);
 });
 
-function test(form) {
-    console.log('click', form);
+function selectView(event) {
+    const formName = event.currentTarget.getAttribute('data-form');
+    setTimeout(() => {
+        const form = document.getElementById(formName);
+        form.addEventListener("submit", handleFormSubmit);
+    }, 3000);
 }
 
 /* 1_users */
@@ -36,7 +39,7 @@ cityForm.addEventListener("submit", handleFormSubmit); */
 /* const categoriesForm = document.getElementById("categories-form");
 categoriesForm.addEventListener("submit", handleFormSubmit); */
 
-/* const testingForm = false;
+const testingForm = false;
 
 async function handleFormSubmit(event) {
     event.preventDefault();
@@ -81,4 +84,4 @@ async function postFormDataAsJson({ url, formData }) {
     }
 
     return response.text();
-} */
+}
