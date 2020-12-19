@@ -1,4 +1,4 @@
 import { write } from './formService.js';
 
-const regionForm = document.getElementById('region-form');
-console.log(regionForm);
+const cityForm = document.getElementById('city-form');
+console.log(cityForm);
