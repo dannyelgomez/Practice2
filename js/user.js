@@ -1,12 +1,7 @@
-import { write } from './formService.js';
+import { handleFormSubmit } from './formService.js';
 
 const userForm = document.getElementById('user-form');
-console.log(userForm);
+userForm.addEventListener('submit', handleFormSubmit);
 
-
-
-
-
-// Get
-// Post
-// Filter
+/*  Cerrar Modal
+    Limpiar Formulario */

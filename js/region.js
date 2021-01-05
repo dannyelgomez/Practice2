@@ -1,4 +1,4 @@
-import { write } from './formService.js';
+import { handleFormSubmit } from './formService.js';
 
 const regionForm = document.getElementById('region-form');
-console.log(regionForm);
+regionForm.addEventListener('submit', handleFormSubmit);
