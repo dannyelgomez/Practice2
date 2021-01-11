@@ -1,4 +1,4 @@
-import { write } from './formService.js';
+import { handleFormSubmit } from './formService.js';
 
 const cityForm = document.getElementById('city-form');
-console.log(cityForm);
+cityForm.addEventListener('submit', handleFormSubmit);
