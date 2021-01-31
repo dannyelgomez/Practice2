@@ -15,23 +15,23 @@
     <div>
         <ul class="text-left py-3">
             <h1>Data Warehouse</h1>
-            <li><span onclick="showView('userView')">Users</span></li>
-            <li><span onclick="showView('regionView')">Regions</span></li>
-            <li><span onclick="showView('countryView')">Countries</span></li>
-            <li><span onclick="showView('contactView')">Contacts</span></li>
-            <li><span onclick="showView('companyView')">Company</span></li>
-            <li><span onclick="showView('cityView')">Cities</span></li>
+            <li><span class="main-view" data-view="users">Users</span></li>
+            <li><span class="main-view" data-view="regions">Regions</span></li>
+            <li><span class="main-view" data-view="countries">Countries</span></li>
+            <li><span class="main-view" data-view="contacts">Contacts</span></li>
+            <li><span class="main-view" data-view="companies">Company</span></li>
+            <li><span class="main-view" data-view="cities">Cities</span></li>
         </ul>
     </div>
 
-    <div id="userView" class="viewContent">
+    <div id="users" class="viewContent">
         User!
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal">
             Create User
           </button>
 
-        <div id="list" class="px-5">
+        <div id="list-users" class="px-5">
         </div>
 
         <!-- Modal -->
@@ -105,14 +105,14 @@
         </div>
     </div>
 
-    <div id="regionView" class="viewContent">
+    <div id="regions" class="viewContent">
         Region!
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#regionModal">
             Create Region
           </button>
 
-        <div id="list" class="px-5">
+        <div id="list-regions" class="px-5">
         </div>
 
         <!-- Modal -->
@@ -162,14 +162,14 @@
 
     </div>
 
-    <div id="countryView" class="viewContent">
+    <div id="countries" class="viewContent">
         Country!
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#countryModal">
             Create Country
           </button>
 
-        <div id="list" class="px-5">
+        <div id="list-countries" class="px-5">
         </div>
 
         <!-- Modal -->
@@ -223,14 +223,14 @@
 
     </div>
 
-    <div id="contactView" class="viewContent">
+    <div id="contacts" class="viewContent">
         Contact!
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
             Create Contact
           </button>
 
-        <div id="list" class="px-5">
+        <div id="list-contacts" class="px-5">
         </div>
 
         <!-- Modal -->
@@ -296,14 +296,14 @@
 
     </div>
 
-    <div id="companyView" class="viewContent">
+    <div id="companies" class="viewContent">
         Company!
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#companyModal">
             Create Company
           </button>
 
-        <div id="list" class="px-5">
+        <div id="list-companies" class="px-5">
         </div>
 
         <!-- Modal -->
@@ -373,14 +373,14 @@
 
     </div>
 
-    <div id="cityView" class="viewContent">
+    <div id="cities" class="viewContent">
         City!
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citytModal">
             Create City
           </button>
 
-        <div id="list" class="px-5">
+        <div id="list-cities" class="px-5">
         </div>
 
         <!-- Modal -->
